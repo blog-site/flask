@@ -6,7 +6,8 @@ from flask_jwt_extended import get_jwt_identity
 from flask_jwt_extended import jwt_required
 from flask_jwt_extended import JWTManager
 
-app.config["JWT_SECRET_KEY"]="cidCfqisLr5d+HlW+CpXx4RYAe4="  # Change this!
+with open('/run/secrets/jwt_secret_key','r') as f:
+    app.config["JWT_SECRET_KEY"]=f.read()
 jwt=JWTManager(app)
 
 @app.post("/auth/login")

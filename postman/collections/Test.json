@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "d820ae8c-3316-4aee-9110-f2414347a555",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "16649912-d820ae8c-3316-4aee-9110-f2414347a555"
+	},
+	"item": [
+		{
+			"name": "Hello World",
+			"id": "4b91334a-8652-4b84-98b6-4bc79119ec8f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tonych.me:5000/test",
+					"protocol": "https",
+					"host": [
+						"tonych",
+						"me"
+					],
+					"port": "5000",
+					"path": [
+						"test"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "6b14cc4d-edad-45fa-a57f-9de57fe438b9",
+					"name": "Hello World",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tonych.me:5000/test",
+							"protocol": "https",
+							"host": [
+								"tonych",
+								"me"
+							],
+							"port": "5000",
+							"path": [
+								"test"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.2.2 Python/3.11.1"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Jan 2023 08:39:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "14"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "Hello, world!\n"
+				}
+			]
+		}
+	]
+}

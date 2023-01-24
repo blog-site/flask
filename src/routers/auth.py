@@ -18,9 +18,9 @@ def login():
     username=data.get("username", None)
     password=data.get("password", None)
     if sql.checkName(username)==False:
-        return jsonify(msg="Bad username or password"),401
+        return jsonify(msg="User not exists"),401
     if not checkpw(password.encode(),sql.getPassword(username).encode()):
-        return jsonify(msg="Bad username or password"),401
+        return jsonify(msg="Wrong password"),401
     access_token=create_access_token(identity=username)
     return jsonify(access_token=access_token)
 

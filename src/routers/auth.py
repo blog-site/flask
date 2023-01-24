@@ -18,6 +18,8 @@ def login():
     data=request.json
     username=data.get("username", None)
     password=data.get("password", None)
+    if not username or not password:
+        return jsonify(msg="Data not complete"),400
     if sql.checkName(username)==False:
         return jsonify(msg="User not exists"),401
     if not checkpw(password.encode(),sql.getPassword(username).encode()):
@@ -30,6 +32,8 @@ def register():
     data=request.json
     username=data.get("username",None)
     password=data.get("password",None)
+    if not username or not password:
+        return jsonify(msg="Data not complete"),400
     if sql.checkName(username):
         return jsonify(msg=f"Username '{username}' conflicted"),409
     hashed=hashpw(password.encode(),gensalt())
@@ -37,6 +41,7 @@ def register():
     return jsonify(msg="OK"),200
 
 @app.post("/auth/logout")
+@jwt_required()
 def logout():
     ret=jsonify(msg="Logout successful")
     unset_jwt_cookies(ret)

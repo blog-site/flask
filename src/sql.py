@@ -1,10 +1,11 @@
+from time import sleep
 from mysql import connector
 
 class SQL():
     def __init__(self):
         try:
             with open('/run/secrets/mysql_root_password','r') as f:
-                root_passwd=f.read()
+                root_passwd=f.read().strip()
             self.db=connector.connect(
                 host="mysql",
                 user="root",
@@ -13,5 +14,6 @@ class SQL():
             )
         except Exception as e:
             print(e,flush=True)
+            sleep(2)
             exit(1)
         return

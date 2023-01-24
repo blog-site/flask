@@ -30,7 +30,6 @@ def register():
     data=request.json
     username=data.get("username",None)
     password=data.get("password",None)
-    print(username,password,flush=True)
     if sql.checkName(username):
         return jsonify(msg=f"Username '{username}' conflicted"),409
     hashed=hashpw(password.encode(),gensalt())

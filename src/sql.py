@@ -15,7 +15,7 @@ class SQL():
             )
         except Exception as e:
             print(e,flush=True)
-            sleep(2)
+            sleep(3)
             exit(1)
 
     def createUser(self,username:str,password:str):
@@ -31,7 +31,6 @@ class SQL():
     def checkName(self,username:str)->bool:
         cur=self.db.cursor()
         sql="SELECT EXISTS(SELECT 1 FROM `users` WHERE `username`=%s)"
-        # sql="SELECT COUNT(1) FROM `users` WHERE `username` = %s"
         val=(username,)
         cur.execute(sql,val)
         return cur.fetchone()[0]

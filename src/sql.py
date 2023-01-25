@@ -40,3 +40,16 @@ class SQL():
         val=(username,)
         cur.execute(sql,val)
         return cur.fetchone()[0]
+
+    def uploadAvator(self,username:str,image):
+        cur=self.db.cursor()
+        sql="UPDATE `users` SET `avator`=%s WHERE `username`=%s"
+        val=(image,username)
+        cur.execute(sql,val)
+        self.db.commit()
+    def getAvator(self,username:str):
+        cur=self.db.cursor()
+        sql="SELECT `avator` FROM `users` WHERE `username`=%s"
+        val=(username,)
+        cur.execute(sql,val)
+        return cur.fetchone()[0]

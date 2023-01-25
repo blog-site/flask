@@ -16,8 +16,8 @@ jwt=JWTManager(app)
 @app.post("/auth/login")
 def login():
     data=request.json
-    username=data.get("username", None)
-    password=data.get("password", None)
+    username=data.get("username",None)
+    password=data.get("password",None)
     if not username or not password:
         return jsonify(msg="Data not complete"),400
     if sql.checkName(username)==False:

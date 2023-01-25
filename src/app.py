@@ -5,6 +5,7 @@ app=Flask(__name__)
 sql=SQL()
 
 import routers.auth 
+import routers.user
 import routers.file
 
 @app.route("/test")

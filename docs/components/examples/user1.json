@@ -1,0 +1,7 @@
+{
+    "summary": "User 1 example",
+    "value": {
+        "username": "user1",
+        "password": "abc123"
+    }
+}

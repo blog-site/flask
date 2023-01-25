@@ -1,0 +1,18 @@
+{
+    "description": "Bad username or password",
+    "content": {
+        "application/json": {
+            "schema": {
+                "$ref": "../schemas/msg.json"
+            },
+            "examples": {
+                "ex1":{
+                    "$ref":"../examples/userNotExist.json"
+                },
+                "ex2": {
+                    "$ref": "../examples/wrongPassword.json"
+                }
+            }
+        }
+    }
+}

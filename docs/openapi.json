@@ -1,0 +1,41 @@
+{
+    "openapi": "3.1.2",
+    "info": {
+        "title": "Web-site API",
+        "summary": "API Document",
+        "description": "Web-site Backend API Document",
+        "contact": {
+            "name": "LolaInTa Chi",
+            "email": "lolainta@gmail.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "https://tonych.me:5000",
+            "description": "Development Server"
+        }
+    ],
+    "paths": {
+        "/auth/register": {
+            "$ref": "./paths/register.json"
+        },
+        "/auth/login": {
+            "$ref": "./paths/login.json"
+        }
+    },
+    "security": [
+        {
+            "bearerAuth": []
+        }
+    ],
+    "components": {
+        "securitySchemes": {
+            "$ref": "./components/securitySchemes.json"
+        }
+    }
+}

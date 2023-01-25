@@ -1,0 +1,18 @@
+{
+    "description": "User conflicted",
+    "content": {
+        "application/json": {
+            "schema": {
+                "$ref": "../schemas/msg.json"
+            },
+            "examples": {
+                "user1": {
+                    "$ref": "../examples/conflict1.json"
+                },
+                "user2": {
+                    "$ref": "../examples/conflict2.json"
+                }
+            }
+        }
+    }
+}

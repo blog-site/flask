@@ -1,0 +1,18 @@
+{
+    "description": "Successfully logged in",
+    "content": {
+        "application/json": {
+            "schema": {
+                "$ref": "../schemas/accessToken.json"
+            },
+            "examples": {
+                "user1": {
+                    "$ref": "../examples/accessToken1.json"
+                },
+                "user2": {
+                    "$ref": "../examples/accessToken2.json"
+                }
+            }
+        }
+    }
+}

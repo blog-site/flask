@@ -1,0 +1,6 @@
+{
+    "summary": "Access token example (user1)",
+    "value": {
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY3NDY0NzMyMywianRpIjoiMTk1NWIzZDUtZjVkOC00ZmJmLWE2ZjAtMDk5NmM0OWE5YjhhIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6InVzZXIxIiwibmJmIjoxNjc0NjQ3MzIzLCJleHAiOjE2NzQ2NDgyMjN9.W4bZzNigq2qjUv5AIn8DDp3K2cktDZJfQNCTrmkYuIw"
+    }
+}

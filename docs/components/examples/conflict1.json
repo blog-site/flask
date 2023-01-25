@@ -1,0 +1,6 @@
+{
+    "summary": "User1 exists already",
+    "value": {
+        "msg": "Username 'user1' conflicted"
+    }
+}

@@ -1,0 +1,14 @@
+apis:
+  API@1.0.0:
+    root: ./openapi.json
+extends:
+  - recommended
+rules:
+  no-unused-components: warn
+  security-defined: warn
+features.openapi:
+  generateCodeSamples:
+    languages:
+      - lang: curl
+      - lang: Node.js
+      - lang: Python

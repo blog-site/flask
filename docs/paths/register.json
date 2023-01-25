@@ -1,0 +1,25 @@
+{
+    "post": {
+        "tags": [
+            "Auth"
+        ],
+        "summary": "Register a new user",
+        "operationId": "createNewUser",
+        "requestBody": {
+            "$ref": "../components/requestBodies/user.json"
+        },
+        "responses": {
+            "200": {
+                "$ref": "../components/responses/UserCreated.json"
+            },
+            "400":{
+                "$ref":"../components/responses/NotComplete.json"
+            },
+            "409": {
+                "$ref": "../components/responses/UserConflict.json"
+            }
+
+        },
+        "security": []
+    }
+}

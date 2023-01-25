@@ -1,0 +1,19 @@
+{
+    "description": "User request body",
+    "content": {
+        "application/json": {
+            "schema": {
+                "$ref": "../schemas/user.json"
+            },
+            "examples": {
+                "user1": {
+                    "$ref": "../examples/user1.json"
+                },
+                "user2": {
+                    "$ref": "../examples/user2.json"
+                }
+            }
+        }
+    },
+    "required": true
+}

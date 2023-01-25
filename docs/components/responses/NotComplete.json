@@ -1,0 +1,15 @@
+{
+    "description": "Some required data missed",
+    "content": {
+        "application/json": {
+            "schema": {
+                "$ref": "../schemas/msg.json"
+            },
+            "examples": {
+                "ex1": {
+                    "$ref": "../examples/missData.json"
+                }
+            }
+        }
+    }
+}

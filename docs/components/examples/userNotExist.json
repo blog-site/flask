@@ -1,0 +1,6 @@
+{
+    "summary": "Login with not exsited user",
+    "value": {
+        "msg": "User not exists"
+    }
+}

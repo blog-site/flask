@@ -1,0 +1,24 @@
+{
+    "post": {
+        "tags": [
+            "Auth"
+        ],
+        "summary": "User login",
+        "operationId": "loginUser",
+        "requestBody": {
+            "$ref": "../components/requestBodies/user.json"
+        },
+        "responses": {
+            "200": {
+                "$ref": "../components/responses/SuccessLogin.json"
+            },
+            "400": {
+                "$ref": "../components/responses/NotComplete.json"
+            },
+            "401": {
+                "$ref":"../components/responses/BadLogin.json"
+            }
+        },
+        "security": []
+    }
+}
